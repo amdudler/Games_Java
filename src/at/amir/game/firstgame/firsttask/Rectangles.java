@@ -1,4 +1,4 @@
-package at.amir.games.firstgame.firsttask;
+package at.amir.game.firstgame.firsttask;
 
 import org.newdawn.slick.*;
 

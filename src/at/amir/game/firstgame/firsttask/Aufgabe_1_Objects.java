@@ -23,8 +23,6 @@ public class Aufgabe_1_Objects extends BasicGame {
     private boolean movingUpRect = false;
     private boolean movingLeftRect = false;
 
-    private String test = "test";
-
 
     public Aufgabe_1_Objects(String title) {
         super(title);
