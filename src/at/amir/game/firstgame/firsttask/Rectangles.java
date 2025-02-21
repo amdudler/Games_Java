@@ -45,3 +45,5 @@ public class Rectangles extends BasicGame {
         }
     }
 }
+
+//text for git commit

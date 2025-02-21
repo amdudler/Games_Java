@@ -130,3 +130,5 @@ public class Aufgabe_1_Objects extends BasicGame {
         }
     }
 }
+
+//text for git commit
