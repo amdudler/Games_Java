@@ -35,7 +35,7 @@ public class Main extends BasicGame {
         }
 
         for (int i = 0; i < 11; i++) {
-            Circle circle = new Circle(random.nextInt());
+            Circle circle = new Circle(random.nextFloat(), random.nextFloat(), random.nextFloat());
             this.actors.add(circle);
         }
 
