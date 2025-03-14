@@ -27,19 +27,20 @@ public class Main extends BasicGame {
     @Override
     public void init(GameContainer gameContainer) throws SlickException {
         this.actors = new ArrayList<>();
-
         Random random = new Random();
-        for (int i = 0; i < 11; i++) {
-            Rectangle rectangle = new Rectangle(random.nextInt(800), random.nextInt(600), random.nextInt(50));
+
+        for (int i = 0; i <= 10; i++) {
+            boolean linksnachrechts = random.nextBoolean();
+            Rectangle rectangle = new Rectangle(random.nextInt(800), random.nextInt(600), random.nextInt(50), random.nextBoolean());
             this.actors.add(rectangle);
         }
 
-        for (int i = 0; i < 11; i++) {
+        for (int i = 0; i <= 10; i++) {
             Circle circle = new Circle(random.nextFloat(), random.nextFloat(), random.nextFloat());
             this.actors.add(circle);
         }
 
-        for (int i = 0; i < 11; i++) {
+        for (int i = 0; i <= 10; i++) {
             Eclipse eclipse = new Eclipse(random.nextInt(800), random.nextInt(600));
             this.actors.add(eclipse);
         }
