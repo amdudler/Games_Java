@@ -21,17 +21,25 @@ public class Rocket implements Actor {
 
     @Override
     public void update (GameContainer gameContainer, int delta){
-        if(gameContainer.getInput().isKeyDown(Input.KEY_RIGHT)){
+        if(gameContainer.getInput().isKeyDown(Input.KEY_D)){
             this.x++;
         }
-        if(gameContainer.getInput().isKeyDown(Input.KEY_LEFT)){
+        if(gameContainer.getInput().isKeyDown(Input.KEY_A)){
             this.x--;
         }
-        if(gameContainer.getInput().isKeyDown(Input.KEY_UP)){
+        if(gameContainer.getInput().isKeyDown(Input.KEY_W)){
             this.y--;
         }
-        if(gameContainer.getInput().isKeyDown(Input.KEY_DOWN)){
+        if(gameContainer.getInput().isKeyDown(Input.KEY_S)){
             this.y++;
         }
+    }
+
+    public float getX() {
+        return x;
+    }
+
+    public float getY() {
+        return y;
     }
 }

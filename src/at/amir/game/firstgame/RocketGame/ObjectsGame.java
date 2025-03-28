@@ -8,6 +8,7 @@ import java.util.Random;
 
 public class ObjectsGame extends BasicGame {
     private List<at.amir.game.firstgame.RocketGame.Actor> actors;
+    private Rocket rocket;
 
     public ObjectsGame(String title) {
         super(title);
@@ -18,6 +19,7 @@ public class ObjectsGame extends BasicGame {
         this.actors = new ArrayList<>();
 
         Rocket rocket = new Rocket();
+        this.rocket = rocket;
         this.actors.add(rocket);
 
     }
@@ -42,7 +44,11 @@ public class ObjectsGame extends BasicGame {
 
     @Override
     public void keyPressed(int key, char c) {
-        System.out.println(key);
+        if (key == Input.KEY_SPACE){
+            System.out.println("shoot");
+            Cannonball cb = new Cannonball(this.rocket.getX(),this.rocket.getY());
+            this.actors.add(cb);
+        }
 
     }
 
